@@ -43,7 +43,6 @@ def hello_world(request):
 
     if access_token:
         dat = json.dumps(fetch_data('/services/data/v45.0/query/', {'q': 'SELECT Account.Name, Name, CloseDate from Accounts where IsClose = True'}), indent=2)
-        print('jjjjjjjjjjjjjj', dat)
     else:
         print("nooppp")
 
